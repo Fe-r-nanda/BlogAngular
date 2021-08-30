@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { UserLogin } from '../model/UserLogin';
 import { Observable } from 'rxjs';
 import { Usuario } from '../model/Usuario';
+import { environment } from 'src/environments/environment.prod';
 
 
 @Injectable({
@@ -19,6 +20,14 @@ export class AuthService {
     cadastrar(usuario: Usuario): Observable<Usuario>{
       return this.http.post<Usuario> ('https://blogdafe.herokuapp.com/usuarios/cadastrar', usuario)
   }
-  
   /*td minusculo nome que a gente da pode mudar, td que for maiusculo é padrao*/
+
+  logado(){  /*confirma se eciste um token relacionado, se sim usuario existe pode logar, senao, nao ex*/
+    let ok: boolean = false
+
+    if(environment.token != ''){    /*se o token é diferente de zero, entao existe dá ok*/
+      ok = true
+    }
+    return ok
+   }
 }

@@ -1,0 +1,143 @@
+<div class="container-fluid">
+    <div class="row bg-inicial d-flex align-items-center">
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="text-inicial fs-54">Seja bem-vindo(a)!</h1>
+                    <h5 class="fs-18">Use esse espaço para conhecer e compartilhar experiências!</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-light mr-3"  data-toggle="modal" data-target="#modalExemplo">Nova Postagem</button>
+                    <a class="btn btn-outline-light" href="#postagens">Ver postagens</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://u3v8d4z2.stackpathcdn.com/wp-content/uploads/2015/02/Times-Square-noite-nova-york.jpg" alt="Mapa mundi">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.wallpapersafari.com/14/73/vJErYT.jpg" alt="Segundo Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://i.pinimg.com/originals/b2/78/d7/b278d7c10799ec38a629184b1ebb3420.jpg" alt="Terceiro Slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="container mt-5 mb-5" id="postagens">
+           <nav>
+            <div class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                  <a class="nav-link active text-secondary font-weight-bold" id="todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as Postagens</a>
+                
+                  <a class="nav-link text-secondary font-weight-bold" id="minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</a>
+              
+                  <a class="nav-link text-secondary font-weight-bold" id="postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="postagemTema" aria-selected="false">Postagens por Tema</a>
+            </div>
+            </nav>
+
+              <div class="tab-content jus" id="myTabContent">
+                <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab"><div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a href="#" class="card-link">Link do card</a>
+                      <a href="#" class="card-link">Outro link</a>
+                    </div>
+                  </div></div>
+                <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab"><div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a href="#" class="card-link">Link do card</a>
+                      <a href="#" class="card-link">Outro link</a>
+                    </div>
+                  </div></div>
+                <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="postagemTema-tab">
+                    <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a href="#" class="card-link">Link do card</a>
+                      <a href="#" class="card-link">Outro link</a>
+                    </div>
+                  </div></div>
+              </div>
+
+    </div>
+
+
+
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="texto">Título</label>
+            <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+          </div>
+        </div>
+
+          <div class="form-group m-2">
+            <label for="titulo">Texto</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o título">
+          </div>
+
+          <div class="form-group m-2">
+            <label for="tema">Escolha um tema ou  <a  data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>: </label>
+            <select name="tema" id="tema" class="form-control"><option value="">Temas</option></select>
+          </div>
+        
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Publicar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    
