@@ -44,14 +44,14 @@
                     <th scope="col" class="text-right">Modificações</th>
                   </tr>
                 </thead>
-                <tbody>
                   <!--pra cada tema cadstrado ele varre a lista 1 por 1 pra mostrar todos-->
+                  <tbody>
                   <tr *ngFor='let tema of listaTemas'> <!--esse temas é um obj q eu criei p usar aq-->
                     <th>{{tema.id}}</th>
                     <td>{{tema.descricao}}</td>
                     <td class="d-flex justify-content-end">
-                      <button class="btn btn-info mr-3">Editar</button>
-                      <button class="btn btn-danger">Apagar</button>
+                      <button class="btn btn-info mr-3" [routerLink]="['/tema-edit', tema.id]">Editar</button>
+                      <button class="btn btn-danger" [routerLink]="['/tema-delete', tema.id]">Apagar</button>
                     </td>
                   </tr>
                 </tbody>

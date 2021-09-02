@@ -23,14 +23,13 @@ export class TemaComponent implements OnInit {
 
     /*aqui criamos os métodos que chamamos no html */
 
-  ngOnInit() {
+  ngOnInit(){
     if(environment.token == ''){
       alert('Sua seção expirou, faça o login novamente.')
       this.router.navigate(['/entrar'])
-
+    }
 
       this.findAllTemas()   /*ou seja, td vez que abrir a pag de temas ele automaticamente traz tds ja*/
-    }
   }
 
   findAllTemas(){                   /*o subscribe tranforma o json em typescript*/
