@@ -22,6 +22,10 @@ export class AuthService {
   }
   /*td minusculo nome que a gente da pode mudar, td que for maiusculo é padrao*/
 
+  getByIdUser(id: number): Observable<Usuario>{ 
+    return this.http.get<Usuario>('https://blogdafe.herokuapp.com/usuarios/${id}')
+  }
+
   logado(){  /*confirma se eciste um token relacionado, se sim usuario existe pode logar, senao, nao ex*/
     let ok: boolean = false
 
